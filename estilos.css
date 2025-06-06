@@ -11,12 +11,12 @@
 
 .boton-enviar{
 display: flex;
-width: 318.281px;
-height: 94.422px;
+width: 318.281px; /* qué son estos números raros!!! */
+height: 94.422px; /* qué son estos números raros!!! */
 padding: 22px 72px;
 justify-content: center;
-align-items: center;
-gap: 10px;
+align-items: center; /* no hace nada */
+gap: 10px; /* cuál es el sentido de esto acá??? */
 flex-shrink: 0;
 
 border-radius: 50px;
@@ -32,7 +32,7 @@ font-family: Unbounded;
 font-size: 32px;
 font-style: normal;
 font-weight: 800;
-line-height: normal;
+line-height: normal; /* no hace nada */
 letter-spacing: 1.6px;
 }
 
@@ -50,7 +50,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 100px;  /* se te están encimando las cosas en el header por esta medida fija, acordate de que los tamaños los tienen que generar los paddings, no uses los datos tal cual aparecen en figma porque va a estar mal */
 
 }
 
@@ -61,14 +61,14 @@ header{
     width: 100%;
     padding: 36px 44px;
     align-items: center;
-    gap: 700px;
+    gap: 700px; /* esto manejalo con justify content porque cuando tengas pantallas más chicas te va a generar un scroll horizontal*/
 
     border-bottom: 5px solid #000;
 }
 
 .conjunto-botones{
     display: flex;
-    align-items: center;
+    align-items: center; /* no está haciendo nada  */
     gap: 50px;
 }
 
@@ -76,21 +76,21 @@ header{
 .botones{
     display: flex;
     height: 58px;
-    padding: 18px 36px;
-    justify-content: center;
+    padding: 18px 36px; /* el top y bottom no te están sirviendo porque ya le estableciste una altura fija, o usas el alto fijo o le ponés padding*/
+    justify-content: center; /* no funciona */
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* por qué hay gap??? */
 
     border-radius: 50px;
     border: 5px solid #000;
-    background: #EAEAEA;
-    box-shadow: -10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #EAEAEA; /* es necesario ??*/
+    box-shadow: -10px 10px 4px 0px rgba(0, 0, 0, 0.25); /* esta sombra es muy grande y fuerte, tratá de hacerla más sutil */
 
     /*tipografía-de-botones-nav*/
     color: #000;
     font-family: "Maven Pro";
     font-size: 24px;
-    font-style: normal;
+    font-style: normal; /* no funciona */
     font-weight: 600;
     line-height: normal;
 }
@@ -111,7 +111,7 @@ header{
     height: 100px;
     padding: 10px 44px;
     align-items: center;
-    gap: 180px;
+    gap: 180px; /* misma corrección que en el header */
 
     border-top: 5px solid #000;
 }
@@ -124,16 +124,16 @@ header{
 
 
 .derechos-reservados{
-    width: 785px;
-    height: 24px;
-    flex-shrink: 0;
+    width: 785px; /* es necesario??? */
+    height: 24px; /* es necesario??? */
+    flex-shrink: 0; /* qué hace esto??? */
 
-    color: #000;
+    color: #000; /* el color por default de las cosas es negro */
     font-family: "Maven Pro";
     font-size: 20px;
-    font-style: normal;
+    font-style: normal; /* no está haciendo cambios */
     font-weight: 600;
-    line-height: normal;
+    line-height: normal; /* qué hace esto??? */
 }
 /*fin del footer*/
 
@@ -148,7 +148,7 @@ header{
 .presentacion{
     display: flex;
     width: 916px;
-    height: 310px;
+    height: 310px; /* no uses medidas fijas!! */
     justify-content: center;
     align-items: flex-start;
 }
