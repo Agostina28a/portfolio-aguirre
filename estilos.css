@@ -9,20 +9,62 @@
     box-sizing: border-box;
 }
 
+.boton-enviar{
+display: flex;
+width: 318.281px;
+height: 94.422px;
+padding: 22px 72px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+
+border-radius: 50px;
+border: 5px solid #000;
+background: #EAEAEA;
+box-shadow: -20px 20px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+/*tipografia del boton*/
+color: #000;
+
+font-family: Unbounded;
+font-size: 32px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 1.6px;
+}
+
+.boton-enviar:hover{
+    background: #0140A0;
+    color: #EAEAEA;
+}
+
 body{
     background-color: #EAEAEA;
 }
 
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+}
+
+/* navegador botones*/
+
 .botonera{
     display: flex;
-    width: 1920px;
+    width: 100%;
     padding: 36px 44px;
     align-items: center;
     gap: 700px;
 
     border-bottom: 5px solid #000;
 }
-
 
 .conjunto-botones{
     display: flex;
@@ -33,7 +75,6 @@ body{
 
 .botones{
     display: flex;
-   /* width: 156px;*/
     height: 58px;
     padding: 18px 36px;
     justify-content: center;
@@ -54,15 +95,23 @@ body{
     line-height: normal;
 }
 
+.botones:hover{
+
+    background: #0140A0;
+    color: #EAEAEA;
+}
+
+/*fin de navegador con botones*/
+
 /*footer*/
 
 .footer{
     display: flex;
-    width: 1920px;
-    height: 84px;
+    width: 100%;
+    height: 100px;
     padding: 10px 44px;
     align-items: center;
-    gap: 397px;
+    gap: 180px;
 
     border-top: 5px solid #000;
 }
@@ -72,6 +121,7 @@ body{
     align-items: center;
     gap: 30px;
 }
+
 
 .derechos-reservados{
     width: 785px;
@@ -85,7 +135,7 @@ body{
     font-weight: 600;
     line-height: normal;
 }
-
+/*fin del footer*/
 
 /*index-inicio*/
 
@@ -103,9 +153,6 @@ body{
     align-items: flex-start;
 }
 
-
-
-
 h1{
     font-family: "Unbounded", sans-serif;
     font-size: 120px;
@@ -113,9 +160,19 @@ h1{
     line-height: normal;
 }
 
+/*sobre-mi-html*/
+
+.sobre-mi{
+    display: flex;
+    gap: 100px;
+
+}
+
 h2{
-    font-family: "Maven Pro", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    color: #0140A0;
+    font-family: "Maven Pro";
+    font-size: 50px;
     font-style: normal;
+   /* font-weight: 600;*/
+    line-height: normal;
 }
