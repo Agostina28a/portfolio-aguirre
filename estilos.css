@@ -11,8 +11,8 @@
 
 .boton-enviar{
 display: flex;
-width: 20%;
-padding: 22px 72px;
+width: 15%;
+padding: 12px 72px;
 justify-content: center;
 flex-shrink: 0;
 
@@ -24,7 +24,7 @@ box-shadow: -8px 8px 6px 0px rgba(0, 0, 0, 0.25);
 
 /*tipografia del boton*/
 font-family: Unbounded;
-font-size: 32px;
+font-size: 24px;
 font-weight: 800;
 letter-spacing: 1.6px;
 }
@@ -115,6 +115,12 @@ header{
 }
 /*fin del footer*/
 
+
+
+
+
+
+
 /*index-inicio*/
 
 #portada{
@@ -132,10 +138,18 @@ header{
 
 h1{
     font-family: "Unbounded", sans-serif;
-    font-size: 120px;
+    font-size: 110px;
     font-weight: 800px;
-    line-height: normal;
 }
+
+
+
+
+
+
+
+
+
 
 /*sobre-mi-html*/
 
@@ -152,4 +166,73 @@ h2{
     font-style: normal;
    /* font-weight: 600;*/
     line-height: normal;
+}
+
+
+
+
+
+
+
+
+/*Contacto-html*/
+
+h3{
+    color: #0140A0;
+    font-family:"Maven Pro";
+    font-size: 36px;
+
+}
+
+.texto{
+    padding: 10px 20px 0px 30px;
+    
+}
+
+/*formulario de contacto*/
+form{
+    width: 100%;
+    display: flex;
+
+}
+
+form div{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+}
+
+label{
+    display: block;
+    font-family:"Unbounded", sans-serif; 
+    font-size: 24px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    border: 5px solid #000;
+    padding: 10px;
+}
+
+textarea{
+    border-radius: 50px;
+    border: 5px solid;
+    width: 100%;
+    height: 170px;
+    padding: 10px;
+}
+
+.columna3{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    padding: 10px;
+    font-family: "Maven Pro";
+    font-size: 16px;
 }

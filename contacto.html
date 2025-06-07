@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Contacto</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav class="botonera">
+                <img src="img/logotipo.png" width="75px" height="75px" alt="logo-agostina"/>
+                <ul class="conjunto-botones">
+                    <li>
+                        <a class="botones" href="sobre-mi.html" target="_self">Sobre mí</a>
+                    </li>
+                    <li>
+                        <a class="botones" href="proyectos.html" target="_self">Proyectos</a>
+                    </li>
+                    <li>
+                        <a class="botones">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="texto">
+                <h1>Contáctame  :)</h1>
+                <h3>Si querés trabajar conmigo. Escribime que al instante te respondo.</h3>
+            </section>
+            <section class="formulario">
+                <form method="post" action="mailto:agos28aguirre@gmail.com" target="_blank" enctype="text/plain">
+                    <div class="columna1">
+                        <label for="Nombre-completo">Nombre completo</label>
+                        <input type="text" name="Nombre-completo" id="Nombre-completo" maxlength="30" placeholder="Ej.:Juanito" required> 
+
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="Correo electronico" id="Correo electronico" required>
+                    </div>
+                    <div class="columna2">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="(000)0000000000">
+
+                        <label for="Motivo">Motivo</label>
+                        <input type="text" name="Motivo" id="Motivo" required>
+                    </div>
+                    <div class="columna3">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="Mensaje" id="Mensaje"></textarea>
+                        <p>Por favor completar todos los campos :)</p>
+                        <input type="submit" value="Enviar" class="boton-enviar">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="logos-footer"> 
+                    <a href="https://www.instagram.com/lennart.page?utm_source=ig_web_button_share_sheet&igsh=MTQ5ZWI2ZWRrc3JxbQ==" target="_blank">
+                      <img src="img/logo-ig.svg" width="51px" height="51px" alt="logo-instagram"/>  
+                    </a>
+                    <a href="https://www.behance.net/agostinaaguirre1" target="_blank">
+                       <img src="img/logo-behance.svg" width="63px" height="40px" alt="logo-behance"/> 
+                    </a>
+                    
+                </div>
+                <p class="derechos-reservados">Derechos reservados. Copyright © 2025 Agostina Aguirre. Buenos Aires, Argentina.</p>
+                <div>
+                    <img src="img/estrella-footer.png" width="67px" height="67px" alt="estrella-azul-pequeña"/>
+                </div>
+            </div>
+        </footer>
+     </body>
+</html>
