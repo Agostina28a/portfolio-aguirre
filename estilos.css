@@ -9,7 +9,8 @@
     box-sizing: border-box;
 }
 
-.boton-enviar{
+.boton-hablame{
+text-decoration: none;
 display: flex;
 width: 15%;
 padding: 12px 72px;
@@ -23,13 +24,13 @@ box-shadow: -8px 8px 6px 0px rgba(0, 0, 0, 0.25);
 
 
 /*tipografia del boton*/
-font-family: Unbounded;
+font-family: "Unbounded", sans-serif;
 font-size: 24px;
 font-weight: 800;
 letter-spacing: 1.6px;
 }
 
-.boton-enviar:hover{
+.boton-hablame:hover{
     background: #0140A0;
     color: #EAEAEA;
 }
@@ -61,12 +62,14 @@ header{
 .conjunto-botones{
     display: flex;
     gap: 50px;
+    list-style: none;
 }
 
 
 .botones{
     display: flex;
     padding: 18px 36px;
+    text-decoration: none;
 
     border-radius: 50px;
     border: 5px solid #000;
@@ -77,6 +80,10 @@ header{
     font-family: "Maven Pro";
     font-size: 22px;
     font-weight: 600;
+}
+
+a:visited{
+    color: #000;
 }
 
 .botones:hover{
@@ -163,7 +170,7 @@ h1{
 h2{
     color: #0140A0;
     font-family: "Maven Pro";
-    font-size: 50px;
+    font-size: 45px;
     font-style: normal;
    /* font-weight: 600;*/
     line-height: normal;
@@ -226,7 +233,9 @@ h4{
     display: flex;
 }
 
-
+.texto-me-interesa{
+    max-width: 90%;
+}
 
 
 
@@ -299,6 +308,27 @@ h3{
     
 }
 
+.boton-formulario{
+    letter-spacing: 1.6px;
+    width: min-content;
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 12px 42px;
+}
+
+.boton-formulario:hover{
+    background: #0140A0;
+    color: #EAEAEA;
+}
+
+.columna-boton{
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    justify-content: flex-end;
+}
+
 /*formulario de contacto*/
 form{
     width: 100%;
@@ -346,3 +376,4 @@ p{
     font-family: "Maven Pro";
     font-size: 16px;
 }
+
