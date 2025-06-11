@@ -4,6 +4,17 @@
         <meta charset="utf-8" />
         <title>Proyectos</title>
         <link href="estilos.css" rel="stylesheet" type="text/css">
+        <script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+	</script>
     </head>
     <body>
         <header>
@@ -29,8 +40,8 @@
                 <h1>Algunos de mis trabajos</h1>
                 <h2>Te dejo un pequeño repertorio de lo que soy capaz de hacer en las diferentes ramas del diseño.</h2>
             </section>
-           <section class="galeria">
-                <div class="imagenes">
+           <section class="galeria-agos">
+                <div class="imagenes-agos">
                     <a href="valance-1.html" target="_self">
                         <img src="img/valence-1.jpg" width="350px" height="350px"/>
                     </a>
@@ -77,6 +88,72 @@
                         <h5>A un clic del azar</h5>
                         <h6>Tp2 diseñar la información, 2025, trabajo en grupo con Julieta P. y Agustina R.</h6>
                     </div>
+                </div>
+           </section>
+           <section class="grid-container">
+                <article>
+                    <img src="img/coca-rosa.jpg" height="212px" width="212px" alt="pintura-de-una-flor"/>
+                </article>
+                <article>
+                    <img src="img/zapatilla.jpg" height="212px" width="212px" alt="pintura-de-una-flor"/>
+                </article>
+                <article>
+                    <img src="img/carpa.jpg" height="212px" width="212px" alt="pintura-de-una-flor"/>
+                </article>
+                <article>
+                    <img src="img/encendedor.png" height="212px" width="212px" alt="pintura-de-una-flor"/>
+                </article>
+                <article>
+                    <img src="img/casita.jpg" height="212px" width="212px" alt="pintura-de-una-flor"/>
+                </article>
+                <article>
+                    <img src="img/deku.jpg" height="212px" width="212px" alt="pintura-de-una-flor"/>
+                </article>
+           </section>
+
+           <section id="miniaturas">
+                <a href="#coca-rosa"><img src="img/coca-rosa.jpg" width="212px" height="212px" alt="pintura-de-flor" onClick="mostrarGaleria()" ></a>
+                <a href="#zapatilla"><img src="img/zapatilla.jpg" width="212px" height="212px" alt="zapatilla" onClick="mostrarGaleria()"></a>
+                <a href="#carpa"><img src="img/carpa.jpg" width="212px" height="212px" alt="pintura-paisaje" onClick="mostrarGaleria()"></a>
+                <a href="#encendedor"><img src="img/encendedor.png" width="212px" height="212px" alt="dibujo-linea" onClick="mostrarGaleria()"></a>
+                <a href="#casita"><img src="img/casita.jpg" width="212px" height="212px" alt="pintura-campo" onClick="mostrarGaleria()"></a>
+                <a href="#deku"><img src="img/deku.jpg" width="212px" height="212px" alt="personaje" onClick="mostrarGaleria()"></a>
+           </section>
+
+           <section id="galeria">
+                <div class="fondo-galeria">
+                    <article class="galeria-oculta">
+                        <div class="fraccion-galeria" id="coca-rosa">
+                        <p>En mis tiempos libres, me gusta pintar con acrilicos, esta fue una de mis obras inspirada
+                                en una persona que le gusta mucho Coca-cola...</p>
+                        <a class="boton-galeria" href="proyectos.html" onClick="ocultarGaleria()">cerrar</a>
+                        </div>
+
+
+
+                        <div class="fraccion-galeria" id="zapatilla">
+                            <a class="boton-galeria" href="proyectos.html" onClick="ocultarGaleria()">cerrar</a>
+                            <p>No solo pinto sino que ilustro, esto fue la primera vez que dibuje con lapicera.</p>
+                        </div>
+                        <div class="fraccion-galeria" id="carpa">
+                            <a class="boton-galeria" href="proyectos.html" onClick="ocultarGaleria()">cerrar</a>
+                            <p>Acrilico sobre lienzo... un regalo hacia mi padre por su cumpleaños.</p>
+                        </div>
+                        <div class="fraccion-galeria" id="encendedor">
+                            <a class="boton-galeria" href="proyectos.html" onClick="ocultarGaleria()">cerrar</a>
+                            <p>La música siempre me inspira, esto es una de las tantas páginas que hice para mi 
+                                libro de artista donde representé las canciones que más me gustan, en Medios Expresivos3...</p>
+                        </div>
+                        <div class="fraccion-galeria" id="casita">
+                            <a class="boton-galeria" href="proyectos.html" onClick="ocultarGaleria()">cerrar</a>
+                            <p>Un marcapaginas pintado con acrílico, fue un regalo para mi mejor amiga fan del campito.</p>
+                        </div>
+                        <div class="fraccion-galeria" id="deku">
+                            <a class="boton-galeria" href="proyectos.html" onClick="ocultarGaleria()">cerrar</a>
+                            <p>Disfruto mucho dibujar personajes que me gustan, este es Deku de My hero Academia, 
+                            un anime que recomiendo que vean :)</p>
+                        </div>
+                    </article>
                 </div>
            </section>
         </main>
