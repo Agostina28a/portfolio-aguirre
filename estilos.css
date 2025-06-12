@@ -46,6 +46,7 @@ header{
     width: 100%;
     position: sticky;
     top: 1px;
+    z-index: 60;
     background-color: #EAEAEA;
 
 }
@@ -144,6 +145,10 @@ a:visited{
     width: 100%;
     justify-content: center;
     align-items: flex-start;
+}
+
+.columna-video{
+    display: flex;
 }
 
 h1{
@@ -305,6 +310,12 @@ h4{
     flex-direction: column;
 }
 
+.texto-ilus{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px 10px 70px;
+}
+
 h5{
     font-family: "Unbounded", sans-serif;
     font-size: 20px;
@@ -319,7 +330,7 @@ h6{
 }
 
 
-.imagenes{
+.imagenes-valance{
     display: flex;
     gap: 50px;
     padding: 50px 20px 30px 70px;
@@ -332,8 +343,16 @@ h6{
 }
 
 
+.ludopatia{
+    display: flex;
+    gap: 50px;
+    padding: 50px 20px 30px 70px;
+}
+
+
 .container{
     padding: 10px 70px;
+    
 }
 
 .container-che{
@@ -347,6 +366,8 @@ h6{
     border-radius: 50px;
     padding: 30px;
     width: 30%;
+    box-shadow: -8px 8px 6px 0px rgba(0, 0, 0, 0.25);
+
 }
 
 .grid-container{
