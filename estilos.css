@@ -381,69 +381,41 @@ h6{
     grid-gap: 20px;
 }
 
-/* galeria2*/
+.grid-container img:hover{
+    width: 215px;
+    height: 215px;
+}
 
-.boton-galeria{
+
+
+
+
+/*HTML DE IMAGENES*/
+
+.dibujo-header{
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.vista-galeria{
+    background-color: #EAEAEA;
     display: flex;
-    padding: 18px 36px;
-    text-decoration: none;
-
-    border-radius: 50px;
-    border: 5px solid #000;
-    box-shadow: -8px 8px 6px 0px rgba(0, 0, 0, 0.25);
-
-    color: #000;
-    font-family: "Maven Pro";
-    font-size: 22px;
-    font-weight: 600;
+    flex-direction: column;
+    align-items: center;
 }
 
-.boton-galeria:hover{
-    background: #0140A0;
-    color: #EAEAEA;
-}
-
-#galeria{
-    display: none;
-	width: 100%;
-	justify-content: center;
-	height: 100vh;
-	background-color: #000000;
-	position: absolute;
-	top: 0;
-	z-index: 10;
-}
-
-.galeria-oculta{
+.texto-vista-galeria{
     display: flex;
-	width: 100%;
-	max-width: 1450px;
-	overflow: hidden;
-	z-index: 20
-}
-
-.fraccion-galeria{
-    display: flex;
-	align-items: center;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	width: 100%;
-	min-width: 1450px;
-	height: 100vh;
-	justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
 }
 
 
-.fondo-galeria{
-    background-color: black;
-	opacity: 0.9;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 100vh;
-	z-index: 0;
-}
+
+
+
+
 
 
 
