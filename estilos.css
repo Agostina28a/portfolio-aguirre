@@ -132,7 +132,7 @@ a:visited{
 
 
 
-/*index-inicio*/
+/* INDEX */
 
 #portada{
     display: flex;
@@ -254,6 +254,46 @@ h4{
 
 @media screen and (max-width:600px){
     
+    /* HEADER*/ 
+
+    .botonera{
+        border-bottom: 3px solid;
+    }
+    .botonera img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .conjunto-botones{
+        gap: 16px
+    }
+
+    .botones{
+        font-size: 14px;
+        padding: 15px 20px;
+        border: 3px solid;
+    }
+    /* HEADER */
+
+    /* FOOTER */
+
+    .footer{
+        border-top: 3px solid;
+    }
+
+    .footer img{
+        width: 41px;
+        height: 41px;
+    }
+    
+    .derechos-reservados{
+        font-size: 8px;
+    }
+    
+
+
+    /* FOOTER */
+
     .sobre-mi{
         flex-direction: column;
         gap: 20px;
@@ -265,14 +305,18 @@ h4{
         max-width: 371px;
     }
     
+    .estrella-perfil{
+        bottom: 133px;
+    }
+
     h2{
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .cualidades{
         flex-direction: column;
         gap: 60px;
-        padding: 30px 30px 10px 40px;
+        padding: 30px 30px 10px 50px;
     }
 
     .cualidades div{
@@ -285,7 +329,26 @@ h4{
         gap: 30px;
     }
 
-    
+    .boton-me-interesa{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .boton-hablame{
+        text-decoration: none;
+
+        /*tipografia del boton*/
+        font-family: "Unbounded", sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 0.6px;
+        border: 3px solid #000;
+    }
+
+    .columna-estrella img{
+        width: 80px;
+        height: 80px;
+    }
 
 
 }
@@ -413,42 +476,6 @@ h6{
 
 
 
-
-
-/* IDS CON LAS IMAGENES DE GALERIA */
-
-#coca-rosa{
-    background-image: url(img/coca-rosa.jpg);
-    display: flex;
-    flex-direction: column;
-}
-
-#zapatilla{
-    background-image: url(img/zapatilla.jpg);
-}
-
-#carpa{
-    background-image: url(img/carpa.jpg);
-}
-
-#encendedor{
-    background-image: url(img/encendedor.png);
-}
-
-#casita{
-    background-image: url(img/casita.jpg);
-}
-
-#deku{
-    background-image: url(img/deku.jpg);
-}
-
-
-
-
-
-
-
 /*CONTACTO*/
 
 h3{
@@ -531,4 +558,3 @@ p{
     font-family: "Maven Pro";
     font-size: 16px;
 }
-
