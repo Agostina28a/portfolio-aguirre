@@ -136,30 +136,27 @@ a:visited{
 
 #portada{
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 133px;
+    padding: 70px;
 }
 
 .presentacion{
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: flex-start;
 }
 
-.columna-video{
-    display: flex;
-}
+
 
 h1{
     font-family: "Unbounded", sans-serif;
     font-size: 90px;
     font-weight: 800px;
 }
-
-
-
-
 
 
 
@@ -190,7 +187,6 @@ h2{
     font-family: "Maven Pro";
     font-size: 45px;
     font-style: normal;
-   /* font-weight: 600;*/
     line-height: normal;
 }
 
@@ -257,10 +253,7 @@ h4{
 
 
 @media screen and (max-width:600px){
-    body{
-        font-size: 0.75em;
-    }
-
+    
     .sobre-mi{
         flex-direction: column;
         gap: 20px;
@@ -271,7 +264,10 @@ h4{
         width: 100%;
         max-width: 371px;
     }
-        
+    
+    h2{
+        font-size: 10px;
+    }
 
     .cualidades{
         flex-direction: column;
